@@ -1,4 +1,4 @@
-package config;
+package todoapp.config;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,10 +9,10 @@ public class Database {
     private final String userName;
     private final String password;
     private final String host;
-    private final String port;
+    private String port;
     private Connection connection;
 
-    public Database(final String dbName, final String userName, final String password, final String host, final String port) {
+    public Database(final String dbName, final String userName, final String password, final String host) {
         this.dbName = dbName;
         this.userName = userName;
         this.password = password;
